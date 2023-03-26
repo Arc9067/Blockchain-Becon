@@ -315,12 +315,16 @@ main section#about .btn-secondary:hover {
 
 section#tokenomics {
   width: 100%;
+  background-color: var(--cameo);
+  padding: 50px 10px;
 }
 section#tokenomics .card-header.bg-dune {
-  background-color: #352c2c;
+  background-color: var(--matrix);
 }
 section#tokenomics .card-header.bg-dune h5 {
   color: #d7ba9e;
+  font-family: var(--Bold);
+  font-weight: 700;
 }
 section#tokenomics .card-title.pricing-card-title {
   font-size: 2.5rem;
@@ -335,4 +339,63 @@ section#tokenomics .card-body h1 {
 section#tokenomics .container {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+footer {
+  background-color: #352c2c;
+  color: #d7ba9e;
+  padding: 50px 0;
+  width: 100%;
+}
+footer .container .row {
+  justify-content: center;
+  row-gap: 30px;
+}
+footer footer a {
+  color: #d7ba9e;
+}
+footer footer a:hover {
+  color: #8b6d5c;
+}
+footer .footer-logo {
+  color: #d7ba9e;
+  font-size: 30px;
+  font-weight: bold;
+}
+footer .footer-nav {
+  margin-top: 30px;
+}
+footer .footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .footer-nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+footer .footer-nav ul li:last-child {
+  margin-right: 0;
+}
+footer .footer-nav a {
+  color: #d7ba9e;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+footer .footer-nav a:hover {
+  color: #8b6d5c;
+}
+footer .footer-nav .footer-icons {
+  margin-top: 30px;
+}
+footer .footer-nav .footer-icons a {
+  display: inline-block;
+  margin-right: 20px;
+  color: #d7ba9e;
+}
+footer .footer-nav .footer-icons a:last-child {
+  margin-right: 0;
+}
+footer .footer-nav .footer-icons a:hover {
+  color: #8b6d5c;
 }/*# sourceMappingURL=style.css.map */
