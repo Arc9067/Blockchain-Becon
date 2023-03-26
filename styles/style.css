@@ -126,6 +126,33 @@ body {
   overflow-x: hidden;
 }
 
+.loading-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d7ba9e;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 6px solid #6c636c;
+  border-top-color: #d7ba9e;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 header {
   display: flex;
   flex-wrap: wrap;

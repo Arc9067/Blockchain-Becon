@@ -14,3 +14,9 @@ setTimeout(function () {
 mobileMenu.addEventListener("click", function () {
   nav.classList.toggle("open");
 });
+
+window.addEventListener("load", function () {
+  // Wait for the page to load
+  const loadingScreen = document.querySelector(".loading-page");
+  loadingScreen.style.display = "none";
+});
