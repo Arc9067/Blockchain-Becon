@@ -364,6 +364,15 @@ section#tokenomics {
   background-color: var(--cameo);
   padding: 50px 10px;
 
+  .title {
+    font-family: var(--Bold);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 20px auto;
+    text-align: center;
+    color: var(--dune);
+  }
+
   .card-header.bg-dune {
     background-color: var(--matrix);
   }
