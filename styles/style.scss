@@ -330,3 +330,33 @@ main {
     }
   }
 }
+
+section#tokenomics {
+  width: 100%;
+
+  .card-header.bg-dune {
+    background-color: #352c2c;
+  }
+
+  .card-header.bg-dune h5 {
+    color: #d7ba9e;
+  }
+
+  .card-title.pricing-card-title {
+    font-size: 2.5rem;
+    color: #8b6d5c;
+  }
+
+  .card-body {
+    background-color: #654f44;
+  }
+
+  .card-body h1 {
+    color: #d7ba9e;
+  }
+
+  .container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}

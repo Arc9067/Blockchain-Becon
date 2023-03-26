@@ -311,4 +311,28 @@ main section#about .btn-secondary:hover {
   background-color: #8b6d5c;
   border-color: #8b6d5c;
   color: #f2f2f2;
+}
+
+section#tokenomics {
+  width: 100%;
+}
+section#tokenomics .card-header.bg-dune {
+  background-color: #352c2c;
+}
+section#tokenomics .card-header.bg-dune h5 {
+  color: #d7ba9e;
+}
+section#tokenomics .card-title.pricing-card-title {
+  font-size: 2.5rem;
+  color: #8b6d5c;
+}
+section#tokenomics .card-body {
+  background-color: #654f44;
+}
+section#tokenomics .card-body h1 {
+  color: #d7ba9e;
+}
+section#tokenomics .container {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */
