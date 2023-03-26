@@ -1,0 +1,332 @@
+/*----------------------------------------------------
+    google font link start here
+-----------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+/*google font link ends here
+-----------------------------------------------------*/
+/*
+    variable declaration starts here
+*/
+:root {
+  --dune: #352c2c;
+  --cameo: #d7ba9e;
+  --beaver: #8b6d5c;
+  --kabul: #654f44;
+  --flint: #726d63;
+  --shady-lady: #a0999d;
+  --delta: #a3a4a0;
+  --fedora: #6c636c;
+  --matrix: #ac6450;
+  --text-clr: #e5e5e5;
+  --white: #ffffff;
+  --body-clr: #141414;
+  --max-width: 1800px; /*========== Font and typography ==========*/
+  --Regular: "Poppins", sans-serif;
+  --Bold: "Source Sans Pro", sans-serif;
+  --biggest-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --text-width: 400px;
+  /*========== Font weight ==========*/
+  --thin: 300;
+  --regular: 400;
+}
+
+/*
+    variable declaration ends here
+*/
+/* Responsive typography */
+@media screen and (min-width: 992px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+.title {
+  line-height: 1;
+  font-size: var(--biggest-font-size);
+  font-family: var(--Bold);
+}
+
+.head {
+  background-color: #fb9f0b4d;
+  width: max-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-family: var(--Bold);
+  font-size: var(--small-font-size);
+  text-transform: capitalize;
+}
+
+.btn {
+  background-color: #e5e5e5;
+  text-transform: capitalize;
+  font-family: var(--Bold);
+  position: relative;
+  font-size: var(--small-font-size);
+}
+
+h1,
+h2,
+h3,
+p {
+  max-width: 600px;
+}
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+a,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+body {
+  font-family: var(--Regular);
+  font-weight: var(--thin);
+  position: relative;
+  line-height: 1.3;
+  color: var(--white);
+  background-color: var(--body-clr);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px 20px;
+  //   background-color: #fff;
+  background-color: var(--dune);
+  position: relative;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  .logo {
+    a {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--shady-lady);
+
+      img {
+        width: 4rem;
+      }
+    }
+  }
+  nav {
+    margin-left: auto;
+    // background-color: purple;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        margin-right: 20px;
+        color: var(--shady-lady);
+        a {
+          display: block;
+          font-size: 18px;
+          font-weight: bold;
+          color: var(--shady-lady);
+          text-decoration: none;
+          transition: all 0.3s linear;
+        }
+        a:hover {
+          color: var(--matrix);
+        }
+      }
+      li:last-child {
+        margin-right: 0;
+      }
+      @media screen and (max-width: 768px) {
+        li:last-child {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  .mobile-menu {
+    display: none;
+
+    i {
+      font-size: var(--h1-font-size);
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mobile-menu {
+    display: block !important;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  nav {
+    display: none;
+    flex-basis: 100%;
+    width: 100%;
+    ul {
+      flex-direction: column;
+      li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        a {
+          color: #fff;
+          background-color: #333;
+          padding: 10px 20px;
+          border-radius: 5px;
+          a:hover {
+            color: var(--shady-lady);
+            background-color: var(--matrix);
+          }
+        }
+      }
+    }
+  }
+
+  nav.open {
+    display: block;
+  }
+}
+
+.hero {
+  padding: 50px 0;
+  background-color: var(--cameo);
+  color: var(--dune);
+
+  .container {
+    .hero-img {
+      animation: slide-in 1s ease-out infinite;
+      animation-direction: alternate;
+    }
+    @keyframes slide-in {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(0%);
+      }
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      font-family: var(--Bold);
+      text-transform: capitalize;
+      font-weight: 700;
+    }
+    p {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+    .btn-primary {
+      padding: 15px 30px;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 50px;
+      background-color: var(--matrix);
+      outline: none;
+      border: none;
+    }
+    .hero-heading,
+    .hero-text,
+    .hero-btn {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.5s ease-out;
+    }
+    .hero-heading.animate,
+    .hero-text.animate,
+    .hero-btn.animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+main {
+  section#about {
+    width: 100%;
+    background-color: var(--dune);
+    .container {
+      padding: 50px 10px;
+
+      .row {
+        align-items: center;
+      }
+    }
+
+    .col-md-6 img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .col-md-6 h2 {
+      color: var(--cameo);
+      font-family: var(--Bold);
+      font-weight: 700;
+      font-size: var(--biggest-font-size);
+    }
+
+    .col-md-6 p {
+      color: var(--delta);
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .btn-primary {
+      background-color: var(--matrix);
+      border-color: #ac6450;
+    }
+
+    .btn-primary:hover {
+      background-color: #654f44;
+      border-color: #654f44;
+    }
+
+    .btn-secondary {
+      background-color: var(--beaver);
+      border-color: #d7ba9e;
+      color: #fff;
+    }
+
+    .btn-secondary:hover {
+      background-color: #8b6d5c;
+      border-color: #8b6d5c;
+      color: #f2f2f2;
+    }
+  }
+}
